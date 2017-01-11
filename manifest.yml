@@ -1,0 +1,17 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: myredbot
+  host: myredbot
+  disk_quota: 1024M
+  services:
+  - myredbot-cloudantNoSQLDB
+  - Conversation-4y
+  - Text to Speech-sx
+  - Retrieve and Rank-73
+  - availability-monitoring-auto
+  - Document Conversion-9p
+  env:
+    WORKSPACE_ID: 00b1e9bd-accf-437e-893c-b849b61a80b6
